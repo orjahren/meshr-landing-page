@@ -1,113 +1,91 @@
-import Image from 'next/image'
+import Link from "next/link";
+import placeholder from "../public/placeholder.webp";
+import { Portrait, Section, USP } from "./components";
+import NeoVis from "./neovis";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className="h-screen w-screen overflow-x-hidden snap-mandatory snap-y">
+      <div className="flex w-screen justify-around fixed top-0 left-0 items-center justify-center p-5 bg-black z-50">
+        <div className="font-bold cursor-pointer">
+          <Link href="#mission" className="" scroll={true}>
+            Mission
+          </Link>
+        </div>
+        <div className="font-bold cursor-pointer">
+          <Link href="#team" className="" scroll={true}>
+            Team
+          </Link>
+        </div>
+        <div className="font-bold cursor-pointer">
+          <Link href="#contact" className="" scroll={true}>
+            Contact
+          </Link>
         </div>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      <Section>
+        <div className="pt-32 px-10">
+          <h1 className="max-sm:text-6xl sm:text-8xl antialiazed font-bold">
+            THE
+            <br />
+            MESHR
+          </h1>
+          <div className="text-2xl">Making Law Accessible</div>
+         
+        </div>
+         <NeoVis />
+      </Section>
+      <Section id="mission">
+        <div className="pt-32 px-10">
+          <h1 className="max-sm:text-4xl sm:text-6xl antialiazed font-bold">
+            Our Mission
+          </h1>
+          <div className="text-xl max-sm:w-11/12 sm:w-8/12 lg:w-6/12 xl:w-4/12">
+            Elevate your impact with us as we empower professionals and
+            enthusiasts alike, providing enhanced accessibility for informed
+            decisions and deeper understanding within the realm of human rights.
+          </div>
+        </div>
+        <div className="flex max-sm:mt-5 mt-20 max-sm:flex-col sm:flex-row sm:justify-between md:justify-around p-5">
+          <USP
+            heading="🧠 AI Indexing"
+            desc="We use an advanced AI System to systematically understand the
+              context of the documents. We are then able to map them to
+              Keywords."
+          />
+          <USP
+            heading="✨ Graph Visualization"
+            desc="Our indexing results are saved in a Graph Database which is later
+              used to generate a visualization. By having a two-dimensional
+              representation, it gets easier to understand large Datasets."
+          />
+          <USP
+            heading="🔍 Advanced Search"
+            desc="Any ambiguous query from free-text to whole documents can be
+              performed. The returned sub-graph helps to explore similar
+              documents"
+          />
+        </div>
+      </Section>
+      <Section id="team">
+        <div className="pt-32 px-10">
+          <h1 className="max-sm:text-4xl sm:text-6xl antialiazed font-bold">
+            Our Team
+          </h1>
+          <div className="text-xl max-sm:w-11/12 sm:w-8/12 lg:w-6/12 xl:w-5/12">
+            Explore the vibrant personalities that drive our youthful and highly
+            motivated team, united by a shared passion for making a positive
+            impact. Get to know the faces behind the mission:
+          </div>
+        </div>
+        <div className="flex flex-wrap max-sm:mt-5 mt-20 justify-around max-sm:p-5 p-10 space-y-1 w-screen">
+          <Portrait pb={placeholder} name="Inger" desc="UI/UX" />
+          <Portrait pb={placeholder} name="Lorenz" desc="Code" />
+          <Portrait pb={placeholder} name="Oliver" desc="Code" />
+          <Portrait pb={placeholder} name="Nasjida" desc="Law" />
+          <Portrait pb={placeholder} name="Dan" desc="KIS" />
+        </div>
+      </Section>
     </main>
-  )
+  );
 }
