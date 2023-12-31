@@ -25,3 +25,26 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.hid {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+}
+
+.vis {
+  opacity: 1;
+  filter: blur(0px);
+  transform: translateX(0);
+  transition: all 0.5s;
+}
+
+.li-el1 {
+  transition-delay: 200ms;
+}
+.li-el2 {
+  transition-delay: 400ms;
+}
+.li-el3 {
+  transition-delay: 600ms;
+}
