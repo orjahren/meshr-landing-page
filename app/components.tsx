@@ -27,7 +27,7 @@ export function USP({
   return (
     <AnimationOnScroll
       classNameInView={
-        "vis p-5 border-white border-solid rounded-md max-md:border-0 border-2 max-sm:w-fit sm:w-4/12 md:w-3/12 " +
+        "vis p-5 border-black dark:border-white border-solid rounded-md max-md:border-0 border-2 max-sm:w-fit sm:w-4/12 md:w-3/12 " +
         className
       }
       classNameNotInView={

@@ -9,7 +9,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="h-screen w-screen overflow-x-hidden snap-mandatory snap-y">
-      <div className="flex w-screen justify-around fixed top-0 left-0 items-center justify-center p-5 bg-black z-50">
+      <div className="flex w-screen justify-around fixed top-0 left-0 items-center justify-center p-5 bg-white dark:bg-black z-50">
         <div className="font-bold cursor-pointer">
           <Link href="#mission" className="" scroll={true}>
             Mission
@@ -30,12 +30,12 @@ export default function Home() {
       <Section>
         <div className="pt-32 px-10">
           <AnimationOnScroll classNameInView={"vis"} classNameNotInView={"hid"}>
-            <h1 className="max-sm:text-6xl sm:text-8xl drop-shadow-xl antialiazed font-bold">
+            <h1 className="max-sm:text-6xl sm:text-8xl drop-shadow-xl-d dark:drop-shadow-xl antialiazed font-bold">
               THE
               <br />
               MESHR
             </h1>
-            <div className="text-2xl drop-shadow-xl">Making Law Accessible</div>
+            <div className="text-2xl drop-shadow-xl-d dark:drop-shadow-xl">Making Law Accessible</div>
           </AnimationOnScroll>
         </div>
         {/*<NeoVis />*/}
@@ -44,7 +44,7 @@ export default function Home() {
       <Section id="mission">
         <AnimationOnScroll classNameInView={"vis"} classNameNotInView={"hid"}>
           <div className="pt-32 px-10">
-            <h1 className="max-sm:text-4xl sm:text-6xl drop-shadow-xl antialiazed font-bold">
+            <h1 className="max-sm:text-4xl sm:text-6xl drop-shadow-xl-d dark:drop-shadow-xl antialiazed font-bold">
               Our Mission
             </h1>
             <div className="text-xl max-sm:w-11/12 sm:w-8/12 lg:w-6/12 xl:w-4/12">
@@ -85,7 +85,7 @@ export default function Home() {
       <Section id="team">
         <AnimationOnScroll classNameInView={"vis"} classNameNotInView={"hid"}>
           <div className="pt-32 px-10">
-            <h1 className="max-sm:text-4xl sm:text-6xl drop-shadow-xl antialiazed font-bold">
+            <h1 className="max-sm:text-4xl sm:text-6xl drop-shadow-xl-d dark:drop-shadow-xl antialiazed font-bold">
               Our Team
             </h1>
             <div className="text-xl max-sm:w-11/12 sm:w-8/12 lg:w-6/12 xl:w-5/12">
