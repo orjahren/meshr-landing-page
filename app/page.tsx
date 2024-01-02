@@ -1,6 +1,6 @@
 import Link from "next/link";
 import placeholder from "../public/placeholder.webp";
-import { Portrait, Section, USP } from "./components";
+import { Contact, Portrait, Section, USP } from "./components";
 import NeoVis from "./neovis";
 import AnimationOnScroll from "./animateonscroll";
 import "./globals.css";
@@ -35,11 +35,19 @@ export default function Home() {
               <br />
               MESHR
             </h1>
-            <div className="text-2xl drop-shadow-xl-d dark:drop-shadow-xl">Making Law Accessible</div>
+            <div className="text-2xl drop-shadow-xl-d dark:drop-shadow-xl">
+              Making Law Accessible
+            </div>
           </AnimationOnScroll>
         </div>
         {/*<NeoVis />*/}
-        <Image className="h-3/5 w-50 object-contain" alt="graph" width="700" height="700" src={graph} />
+        <Image
+          className="h-3/5 w-50 object-contain"
+          alt="graph"
+          width="700"
+          height="700"
+          src={graph}
+        />
       </Section>
       <Section id="mission">
         <AnimationOnScroll classNameInView={"vis"} classNameNotInView={"hid"}>
@@ -56,7 +64,7 @@ export default function Home() {
           </div>
         </AnimationOnScroll>
 
-        <div className="flex max-sm:mt-5 mt-20 max-sm:flex-col sm:flex-row sm:justify-between md:justify-around p-5 usps">
+        <div className="flex max-sm:mt-5 mt-20 md:mt-32 lg:mt-52 xl:mt-64 max-sm:flex-col sm:flex-row sm:justify-between md:justify-around p-5 usps">
           <USP
             heading="🧠 AI Indexing"
             desc="We use an advanced AI System to systematically understand the
@@ -95,7 +103,7 @@ export default function Home() {
             </div>
           </div>
         </AnimationOnScroll>
-        <div className="flex flex-wrap max-sm:mt-5 mt-20 justify-around max-sm:p-5 p-10 space-y-1 w-screen">
+        <div className="flex flex-wrap max-sm:mt-5 mt-20 md:mt-32 lg:mt-52 xl:mt-64 justify-around max-sm:p-5 p-10 space-y-1 w-screen">
           <Portrait
             pb={placeholder}
             name="Inger"
@@ -121,6 +129,41 @@ export default function Home() {
             className="li-el1"
           />
           <Portrait pb={placeholder} name="Dan" desc="KIS" className="li-el2" />
+        </div>
+      </Section>
+      <Section id="contact">
+        <AnimationOnScroll classNameInView={"vis"} classNameNotInView={"hid"}>
+          <div className="pt-32 px-10">
+            <h1 className="max-sm:text-4xl sm:text-6xl drop-shadow-xl-d dark:drop-shadow-xl antialiazed font-bold">
+              Contact
+            </h1>
+            <div className="text-xl max-sm:w-11/12 sm:w-8/12 lg:w-6/12 xl:w-5/12">
+              Please contact us if you are interested in our product, for
+              collaboration or anything else. We are always eager to talk about
+              the project
+            </div>
+          </div>
+        </AnimationOnScroll>{" "}
+        <div className="flex max-sm:mt-5 mt-20 md:mt-32 lg:mt-52 xl:mt-64 max-sm:flex-col sm:flex-row sm:justify-between md:justify-around p-5 usps">
+          <Contact
+            heading="☎️ Telephone"
+            desc="Feel free to call us at"
+            className="li-el1"
+          >
+            <a href="tel:+123456789">
+              <b>+123456789</b>
+            </a>
+          </Contact>
+
+          <Contact
+            heading="📧 Email"
+            desc="Send us a quick message to this inbox"
+            className="li-el2"
+          >
+            <a href="mailto:support@meshr.io">
+              <b>support@meshr.io</b>
+            </a>
+          </Contact>
         </div>
       </Section>
     </main>
