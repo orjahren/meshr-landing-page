@@ -8,7 +8,7 @@ import graph from "../public/graph.png";
 import Image from "next/image";
 export default function Home() {
   return (
-    <main className="h-screen w-screen overflow-x-hidden snap-mandatory snap-y">
+    <main className="h-screen w-screen overflow-x-hidden snap-proximity snap-y">
       <div className="flex w-screen justify-around fixed top-0 left-0 items-center justify-center p-5 bg-white dark:bg-black z-50">
         <div className="font-bold cursor-pointer">
           <Link href="#mission" className="" scroll={true}>
