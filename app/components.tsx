@@ -5,12 +5,14 @@ import { Children } from "react";
 export function Section({
   children,
   id,
+  className,
 }: {
   children: React.ReactNode;
   id?: string;
+  className?: string;
 }) {
   return (
-    <div className="h-screen snap-start" id={id ? id : ""}>
+    <div className={"h-screen snap-start " + className} id={id ? id : ""}>
       {children}
     </div>
   );

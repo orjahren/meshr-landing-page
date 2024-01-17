@@ -1,7 +1,6 @@
 import Link from "next/link";
 import placeholder from "../public/placeholder.webp";
 import { Contact, Portrait, Section, USP } from "./components";
-import NeoVis from "./neovis";
 import AnimationOnScroll from "./animateonscroll";
 import "./globals.css";
 import graph from "../public/graph.png";
@@ -27,8 +26,8 @@ export default function Home() {
           </Link>
         </div>
       </div>
-      <Section>
-        <div className="pt-32 px-10">
+      <Section className=" flex flex-col justify-items-center">
+        <div className="pt-32 px-10 z-50">
           <AnimationOnScroll classNameInView={"vis"} classNameNotInView={"hid"}>
             <h1 className="max-sm:text-6xl sm:text-8xl drop-shadow-xl-d dark:drop-shadow-xl antialiazed font-bold">
               THE
@@ -40,9 +39,8 @@ export default function Home() {
             </div>
           </AnimationOnScroll>
         </div>
-        {/*<NeoVis />*/}
         <Image
-          className="h-3/5 w-50 object-contain"
+          className="max-lg:h-[60%] lg:h-[80%] w-[100%] object-contain max-lg:self-center lg:relative lg:inset-x-2/4 lg:inset-y-2/4 lg:translate-x-[-45%] lg:translate-y-[-90%]"
           alt="graph"
           width="700"
           height="700"
