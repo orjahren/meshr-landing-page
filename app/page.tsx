@@ -40,7 +40,7 @@ export default function Home() {
           </AnimationOnScroll>
         </div>
         <Image
-          className="max-lg:h-[60%] lg:h-[80%] w-[100%] object-contain max-lg:self-center lg:relative lg:inset-x-2/4 lg:inset-y-2/4 lg:translate-x-[-45%] lg:translate-y-[-90%]"
+          className="max-lg:h-[60%] lg:h-[80%] w-[100%] object-contain max-lg:self-center lg:fixed lg:inset-x-2/4 lg:inset-y-2/4 lg:translate-x-[-45%] lg:translate-y-[-50%] pointer-events-none"
           alt="graph"
           width="700"
           height="700"
