@@ -50,8 +50,8 @@ export default function Home() {
         />
       </Section>
       <Section id="mission">
-        <AnimationOnScroll classNameInView={"vis"} classNameNotInView={"hid"}>
-          <div className="pt-32 px-10">
+        <div className="pt-32 px-10">
+          <AnimationOnScroll classNameInView={"vis"} classNameNotInView={"hid"}>
             <h1 className="max-sm:text-4xl sm:text-6xl drop-shadow-xl-d dark:drop-shadow-xl antialiazed font-bold">
               Our Mission
             </h1>
@@ -61,8 +61,8 @@ export default function Home() {
               decisions and deeper understanding within the realm of human
               rights.
             </div>
-          </div>
-        </AnimationOnScroll>
+          </AnimationOnScroll>
+        </div>
 
         <div className="flex max-sm:mt-5 mt-20 md:mt-32 lg:mt-52 xl:mt-64 max-sm:flex-col sm:flex-row sm:justify-between md:justify-around p-5 usps">
           <USP
@@ -91,8 +91,8 @@ export default function Home() {
         </div>
       </Section>
       <Section id="team">
-        <AnimationOnScroll classNameInView={"vis"} classNameNotInView={"hid"}>
-          <div className="pt-32 px-10">
+        <div className="pt-32 px-10">
+          <AnimationOnScroll classNameInView={"vis"} classNameNotInView={"hid"}>
             <h1 className="max-sm:text-4xl sm:text-6xl drop-shadow-xl-d dark:drop-shadow-xl antialiazed font-bold">
               Our Team
             </h1>
@@ -101,8 +101,8 @@ export default function Home() {
               highly motivated team, united by a shared passion for making a
               positive impact. Get to know the faces behind the mission:
             </div>
-          </div>
-        </AnimationOnScroll>
+          </AnimationOnScroll>
+        </div>
         <div className="flex flex-wrap max-sm:mt-5 mt-20 md:mt-32 lg:mt-52 xl:mt-64 justify-around max-sm:p-5 p-10 space-y-1 w-screen">
           <Portrait
             pb={placeholder}
@@ -132,8 +132,8 @@ export default function Home() {
         </div>
       </Section>
       <Section id="contact">
-        <AnimationOnScroll classNameInView={"vis"} classNameNotInView={"hid"}>
-          <div className="pt-32 px-10">
+        <div className="pt-32 px-10">
+          <AnimationOnScroll classNameInView={"vis"} classNameNotInView={"hid"}>
             <h1 className="max-sm:text-4xl sm:text-6xl drop-shadow-xl-d dark:drop-shadow-xl antialiazed font-bold">
               Contact
             </h1>
@@ -142,8 +142,8 @@ export default function Home() {
               collaboration or anything else. We are always eager to talk about
               the project
             </div>
-          </div>
-        </AnimationOnScroll>{" "}
+          </AnimationOnScroll>
+        </div>
         <div className="flex max-sm:mt-5 mt-20 md:mt-32 lg:mt-52 xl:mt-64 max-sm:flex-col sm:flex-row sm:justify-between md:justify-around p-5 usps">
           <Contact
             heading="☎️ Telephone"
